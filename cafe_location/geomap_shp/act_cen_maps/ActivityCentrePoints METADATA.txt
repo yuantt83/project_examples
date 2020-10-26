@@ -1,0 +1,16 @@
+Title: Activity Centre Points
+
+Description: Point feature layer showing existing and future Metropolitan Activity Centres and Major Activity Centres (also includes Central City).
+
+This layer is indicative only and designed only for cartographic use.  It should not be used for any detailed analysis work.Future Activity Centres have been determined based on Growth Corridor Plans prepared for Melbourne's growth areas (MPA, 2012).
+
+Source: DELWP - Planning 
+
+Data Date: December 2016
+
+Contact: Denise Thorson, 03 8392 5596, Denise.Thorson@delwp.vic.gov.au
+
+
+Copyright The State of Victoria, Department of Environment, Land, Water and Planning, 2017
+
+The State of Vitoria does not warrant the accuracy or completeness of information in this publication and any person using or relying upon such information does so on the basis that the State of Victoria shall bear no responsibility or liability whatsoever for any errors, faults, defects or omissions in the information.
