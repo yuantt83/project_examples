@@ -10,7 +10,7 @@ datasets/life-expectancy.csv
 datasets/nobel_1901_2020.csv
 
 Motivation:
-The motivation of this analysis comes from a random comment I heard after the Nobel Prize announcements 2020. The comment was that women seemed  to win Nobel Prizes at relatively younger ages than men. Then they listed a few female winners of recent years as supporting evidence, including 'Malala Yousafzai', who won the 2014 Nobel Peace Prize at the age of 17, and this year's winners for Physics and Chemistry. My first reaction was that this was a hand-wavy statement based on cherry-picking evidence, hence I want to carry out an analysis and let the data speak for themselves. 
+The motivation of this analysis comes from a random comment I heard after the Nobel Prize announcements 2020. The comment was that women seemed  to win Nobel Prizes at relatively younger ages than men.  My first reaction was that this was a hand-wavy statement based on cherry-picking evidence, hence I want to carry out an analysis and let the data speak for themselves. 
 
 Tests:
 You can run each chunk of the code in the Jupyter notebook.
