@@ -1,6 +1,6 @@
 Synopsis:
 
-Are women Nobel Prize winners younger than men on average? This code provides analysis to find an answer in the latest dataset of the prize recipients over the past 120 years. 
+Are women Nobel Prize winners younger than men on average? This code provides statistical analysis to find an answer using the latest dataset of the prize recipients over the past 120 years. 
 
 This folder contains:
 README  \\ 
