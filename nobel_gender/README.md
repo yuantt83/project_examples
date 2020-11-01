@@ -17,7 +17,7 @@ You can run each chunk of the code in the Jupyter notebook.
 
 Datasource:
 nobel_1901_2020.csv are compiled from 
-Datacamp's data scientist career track (https://medium.com/r?url=https%3A%2F%2Fwww.datacamp.com%2Ftracks%2Fdata-scientist-with-python)
+Datacamp's data scientist career track (www.datacamp.com%2Ftracks%2Fdata-scientist-with-python)
 Nobel prize website (www.nobelprize.org)
 
 life-expectancy.csv is downloaded from Our World in Data (https://medium.com/r?url=https%3A%2F%2Fourworldindata.org%2Flife-expectancy).
