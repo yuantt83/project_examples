@@ -21,7 +21,8 @@ Tests:
 Examples of how to import and test the code can be found in the Jupyter notebook.
 
 Note:
-The robot is likely to acquire other specialities as time goes by, so watch for version update! 
+The robot is likely to acquire other specialities as time goes by, so watch for version update! Or seriously, Siri should be able to do 
+this already (why hasn't it ?!). 
 
 Bug report to: Dr Tiantian Yuan
 www.linkedin.com/in/tiantianyuan                                                                     
