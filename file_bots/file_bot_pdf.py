@@ -30,7 +30,7 @@ def etimer(func):
 
 class FileBots:
     """ 
-    A class to search files and combine pdfs.
+    A class to search for files and combine pdfs hierarchically.
     ...
     Attributes
     ----------
