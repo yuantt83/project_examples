@@ -1,8 +1,8 @@
 Synopsis:
 
-I am tired of organising files by dragging them around or going with one folder at a time.
-This module takes care of finding the right pdfs in the right folder, and merge them accordingly either
-in the separate folders that they are found, or merge them all! 
+This module aims to find the files of interest by giving a search
+directory and a filename search pattern, then merge them accordingly
+either in the separate folders that they are found, or merge them all! 
 
 
 This folder contains:
