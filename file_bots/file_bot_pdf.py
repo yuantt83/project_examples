@@ -57,14 +57,23 @@ class FileBots:
     --------
     # When used as a module:
     # make sure file_bot_pdf.py is in your current dir or in sys.path
-    
+    import file_bot_pdf as fb
+    Case 1:  Merge pdf hierarchically
     dir_in = '/Users/smallpandas/learn_py/DS_courses'  # directory to search
     reg_pattern = r'.*_tree_merged.pdf'  # regex pattern for filenames
-    bot = fb.FileBots(dir_in, reg_pattern) # instantiate a bot object
-    bot.locate(show=False)  # locate files
-    bot.pdf_merge_tree()  # merge pdfs found in the last leaf subdirectory
-    bot.pdf_merge_all()     # merge all pdf files found
-
+    bot1 = fb.FileBots(dir_in, reg_pattern) # instantiate a bot object
+    bot1.locate(show=False)  # locate files
+    bot1.pdf_merge_tree()  # merge pdfs found in the last leaf subdirectory
+    bot1.pdf_merge_all()     # merge all pdf files found
+    
+    Case 2: Simply merge all pdfs under dir_in
+    dir_in = '/Users/smallpandas/learn_py/DS_courses'
+    reg_pattern = r'.*\.pdf'
+    bot1 = fb.FileBots(dir_in, reg_pattern)
+    bot1.locate()
+    bot1.pdf_merge_all() 
+    # equals bot1.pdf_merge_tree(), only that the default output filename differs.
+    
     Bug report to Dr Tiantian Yuan (www.linkedin.com/in/tiantianyuan)
     """
     
@@ -142,7 +151,7 @@ class FileBots:
             Default is None. In this case, output files are written in the last
                 leaf folder where they are merged.      
         out_filename : str, optional
-            The output filename. 
+            The output filename. If specified, all written files will use the same out_filename.
             Default is None. In this case, filename (*_tree_merged.pdf) is automatically 
                 generated with * composed of datetime and random characters. 
         ovewrite_all: boolean, optional
@@ -200,7 +209,9 @@ class FileBots:
     def pdf_merge_all(self, dir_out=None, out_filename=None):
         """
         Merge all pdfs found in the .locate method as one pdf and store it in dir_out.
-        
+        In the simplest all pdfs in one root folder case, method pdf_merge_all = pdf_merge_tree, 
+        only with different default output file names (_all_merged.pdf vs _tree_merged.pdf). 
+
         Parameters
         ----------
         dir_out: str, optional
@@ -208,7 +219,7 @@ class FileBots:
             Default is None. In this case, dir_out = dir_in. 
             
         out_filename: str, optional
-            The name for the output pdf. 
+            The name for the output pdf. If specified, all written files will use the same out_filename.
             Default is None. In this case, out_filename = datetime+random_character+'_all_merged.pdf'.
         """
         
@@ -221,9 +232,11 @@ class FileBots:
             write_filename = timetag + '_' + rand_name + '_all_merged.pdf'
         else:
             write_filename = out_filename
-
+        
+        # sort filename alphabetically
+        sorted_path_file = self.np_path_file[np.argsort(self.np_path_file[:, 1])]
         merger = PdfFileMerger(strict=False)
-        for i, j in self.np_path_file:
+        for i, j in sorted_path_file:
             full_file = i + j
             merger.append(full_file, pages=None)
 
