@@ -4,6 +4,7 @@
 import re
 import os
 import sys
+import shutil
 import random
 import string
 import time
@@ -50,14 +51,18 @@ class FileBots:
     pdf_merge_all(dir_out=None) :
        Merge all pdfs that are found by the .locate method.
     
-    clean(warning=True)
+    clean(warning=True) :
       Delete files found by the .locate method.
    
+    copy_to_folder(dir_out=None, dir_out_name=None)
+      Copy files found by the .locate method to a folder dir_out/dir_out_name
+
     Examples
     --------
     # When used as a module:
     # make sure file_bot_pdf.py is in your current dir or in sys.path
     import file_bot_pdf as fb
+
     Case 1:  Merge pdf hierarchically
     dir_in = '/Users/smallpandas/learn_py/DS_courses'  # directory to search
     reg_pattern = r'.*_tree_merged.pdf'  # regex pattern for filenames
@@ -69,9 +74,9 @@ class FileBots:
     Case 2: Simply merge all pdfs under dir_in
     dir_in = '/Users/smallpandas/learn_py/DS_courses'
     reg_pattern = r'.*\.pdf'
-    bot1 = fb.FileBots(dir_in, reg_pattern)
-    bot1.locate()
-    bot1.pdf_merge_all() 
+    bot2 = fb.FileBots(dir_in, reg_pattern)
+    bot2.locate()
+    bot2.pdf_merge_all() 
     # equals bot1.pdf_merge_tree(), only that the default output filename differs.
     
     Bug report to Dr Tiantian Yuan (www.linkedin.com/in/tiantianyuan)
@@ -280,3 +285,46 @@ class FileBots:
             for path_file, file in self.np_path_file:
                 os.remove(path_file + file) 
                 print('Files removed with your permission!')
+
+    @etimer
+    def copy_to_folder(self, out_dir=None, out_dir_name=None):
+        """ 
+        Delete files found by the .locate method.
+            
+        Parameters
+        ----------
+        out_dir : string, optional
+            Default is None. In this case, files found in .locate will be copied to dir_in.
+        
+        out_dir_name : string, optional
+            Default is None. In this case, a new folder name will be named using 
+            the current datetime + suffix '_folder'.
+        """
+
+        if (not 'np_myset' in self.__dict__) or \
+            (not 'np_path_file' in self.__dict__):
+            raise AttributeError('Use method .locate to get files first!')
+        
+        if out_dir == None:
+            write_path = self.dir_in
+        else:
+            if out_dir.endswith('/'):
+              out_dir = out_dir[:-1]
+              write_path = out_dir
+
+        if out_dir_name == None:
+            timetag = datetime.now().strftime('%Y-%m-%d-%H-%M-%S.%f')[:-1]
+            write_dir_name = write_path + os.sep + timetag + '_folder'
+        else:
+            write_dir_name = write_path + os.sep + out_dir_name
+        
+        try:
+            os.mkdir(write_dir_name)
+        except FileExistsError:
+            print('folder {} already exists..'.format(write_dir_name))
+        except OSError:
+            print('cannot make the folder {}, check'.format(write_dir_name))
+        
+        for path_ori, file in self.np_path_file:
+            shutil.copy(path_ori+file, write_dir_name, follow_symlinks=True)
+        print('Done! Files copied to this folder {}'.format(write_dir_name))
