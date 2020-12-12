@@ -1,10 +1,10 @@
 Synopsis:
 
-This module aims to assist with file-folder related chores.  I wish to only give minimal instructions to an assitant (e.g., a folder, and the features  of the filenames that I want to find), then the assitant will go and find those exact files, and do some simple organising, like, 1) put the files in a new folder, 2) delete the files, 3) do something convenient about the files. 
+This module aims to assist with file-folder related chores.  I wish to only give minimal instructions to an assitant (e.g., a folder, and the features  of the filenames that I want to find), then the assitant will go and find those exact files, and do some simple organising tasks, like, 1) put the files in a new folder, 2) delete the files, 3) do something convenient about the files. 
 
 The steps of using this module follow the line of thought above. Think of the module/class as a robot. To instantiate the bot, give it two initial pointers: 
 a). The folder you want it to work on.
-b). An exact description of the kind of files you want to find (use regular experessions in python).
+b). An exact description of the kind of files (search by filenames currently, but I may add more features later) you want to find (use regular experessions in python).
 
 The bot can then do the following tasks. You only need to specify the task/method name:
 M0. [the .locate method]: Locate and show the files. 
