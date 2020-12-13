@@ -289,7 +289,7 @@ class FileBots:
     @etimer
     def copy_to_folder(self, out_dir=None, out_dir_name=None):
         """ 
-        Delete files found by the .locate method.
+        Copy files found by the .locate method to another folder out_dir_name.
             
         Parameters
         ----------
