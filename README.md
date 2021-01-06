@@ -8,7 +8,7 @@ Using convolutional neural network to identify spiral-arm galaxies.
 Machine learning notebooks, useful templates and mini projects/exercises.
 
 ### file_bots: 
-Python scripts to organise files. Also explained in publication: https://towardsdatascience.com/file-chores-done-by-my-secret-python-bot-c84ea73253c0
+Python scripts to organise files. See also published story here: https://towardsdatascience.com/file-chores-done-by-my-secret-python-bot-c84ea73253c0
 
 ### nobel_gender: 
 Using statistical analysis to address an interesting question of whether women Nobel Prize winner are younger than men. See published story here:
