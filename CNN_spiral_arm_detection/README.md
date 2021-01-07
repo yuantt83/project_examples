@@ -23,9 +23,8 @@ datasets. Some domain knowledge is used here for feature selection.<br/>
   works and how sensitive the result is with respect to
   hyperparameters and input datasets. <br/>
 
-* other\_\*.ipynb:  transfer\_learning\_models, based on  pre-trained models (ResNet, VGG19,
-Inception, EfficientNet, Yolo etc) to retrain our
-data. Interesting results will mostly come from using deep CNN like these. 
+* othermodelnames\_\*.ipynb:  transfer\_learning\_models, based on  pre-trained models (ResNet, VGG19,
+Inception, EfficientNet, Yolo etc) to retrain the data. Interesting results will mostly come from using deep CNN like these. 
 I will add more content here soon ! <br/>
   
 * saved\_model: saved model outputs in .h5 format <br/>
