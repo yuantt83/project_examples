@@ -18,18 +18,19 @@ datasets. Some domain knowledge is used here for feature selection.<br/>
      * sqlcl.py: SDSS python SQL module <br/>
  
 
-* cnn_standard:  build a vanilla convolutional network using
+* cnn\_\*.ipynb:    vanilla convolutional networks using
   Tensorflow and Keras. This is a good exercise to understand how CNN
   works and how sensitive the result is with respect to
   hyperparameters and input datasets. <br/>
 
-* saved\_model: saved model outputs in .h5 format <br/>
-
-* transfer\_learning\_models: use pre-trained models (ResNet, VGG19,
+* other\_\*.ipynb:  transfer\_learning\_models, based on  pre-trained models (ResNet, VGG19,
 Inception, EfficientNet, Yolo etc) to retrain our
-data. Interesting results will mostly come from using deep CNN in this folder. 
+data. Interesting results will mostly come from using deep CNN like these. 
 I will add more content here soon ! <br/>
   
+* saved\_model: saved model outputs in .h5 format <br/>
+
+
   
 
 Project rights and feedback to: Dr Tiantian Yuan<br/>
