@@ -14,7 +14,10 @@ This folder contains:<br/>
   included. <br/>
   
 * data_prep: notebook example for preparing the training and testing
-  datasets. Some domain knowledge is used here for feature selection. <br/>
+datasets. Some domain knowledge is used here for feature selection.
+<br/>
+     * sqlcl.py: SDSS python SQL module
+ 
 
 * cnn_standard:  build a standard convolutional network using
   Tensorflow and Keras. This is a good exercise to understand how CNN
@@ -30,7 +33,6 @@ fast-developing field that open-source models are poping out every
 week! I will add more content here soon! <br/>
 
   
-  * sqlcl.py: SDSS python SQL module
   
 
 Project rights and feedback to: Dr Tiantian Yuan<br/>
