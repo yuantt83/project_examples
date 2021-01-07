@@ -18,7 +18,7 @@ datasets. Some domain knowledge is used here for feature selection.<br/>
      * sqlcl.py: SDSS python SQL module <br/>
  
 
-* cnn_standard:  build a standard convolutional network using
+* cnn_standard:  build a vanilla convolutional network using
   Tensorflow and Keras. This is a good exercise to understand how CNN
   works and how sensitive the result is with respect to
   hyperparameters and input datasets. <br/>
@@ -27,9 +27,8 @@ datasets. Some domain knowledge is used here for feature selection.<br/>
 
 * transfer\_learning\_models: use pre-trained models (ResNet, VGG19,
 Inception, EfficientNet, Yolo etc) to retrain our
-data. Some interesting results come from here.  CNN is such a
-fast-developing field that open-source models are poping out every
-week! I will add more content here soon! <br/>
+data. Interesting results will mostly come from using deep CNN in this folder. 
+I will add more content here soon ! <br/>
   
   
 
