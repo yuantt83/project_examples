@@ -14,9 +14,8 @@ This folder contains:<br/>
   included. <br/>
   
 * data_prep: notebook example for preparing the training and testing
-datasets. Some domain knowledge is used here for feature selection.
-<br/>
-     * sqlcl.py: SDSS python SQL module
+datasets. Some domain knowledge is used here for feature selection.<br/>
+     * sqlcl.py: SDSS python SQL module <br/>
  
 
 * cnn_standard:  build a standard convolutional network using
@@ -31,7 +30,6 @@ Inception, EfficientNet, Yolo etc) to retrain our
 data. Some interesting results come from here.  CNN is such a
 fast-developing field that open-source models are poping out every
 week! I will add more content here soon! <br/>
-
   
   
 
