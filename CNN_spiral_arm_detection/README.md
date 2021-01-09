@@ -27,6 +27,8 @@ datasets. Some domain knowledge is used here for feature selection.<br/>
 Inception, EfficientNet, Yolo etc) to retrain the data. Interesting results will mostly come from using deep CNN like these. 
 I will add more content here soon ! <br/>
   
+* SageMaker*.ipynb: example notebook to run  on AWS SageMaker...
+
 * saved\_model: saved model outputs in .h5 format <br/>
 
 
