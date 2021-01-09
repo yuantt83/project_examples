@@ -1,5 +1,4 @@
-Useful resources to make the best out of  SageMaker:
-
+Useful resources to make the best out of the SageMaker service:
 
 AWS Training Module - Developing Machine Learning Applications: <br>
 https://www.aws.training/Details/Curriculum?id=27243
