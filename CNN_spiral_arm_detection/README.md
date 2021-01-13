@@ -10,11 +10,11 @@ This folder contains:<br/>
 
 * README<br/>
 * dataset/single\_prediction\_test/: galaxy images used for the training and testing. Files too
-  large to upload to here, so only single testing images are
+  large be copied here, so only single testing images are
   included. <br/>
   
 * data_prep: notebook example for preparing the training and testing
-datasets. Some domain knowledge is used here for feature selection.<br/>
+datasets. Some astro domain knowledge is used here for feature selection.<br/>
      * sqlcl.py: SDSS python SQL module <br/>
  
 
@@ -27,9 +27,9 @@ datasets. Some domain knowledge is used here for feature selection.<br/>
 Inception, EfficientNet, Yolo etc) to retrain the data. Interesting results will mostly come from using deep CNN like these. 
 I will add more content here soon ! <br/>
   
-* SageMaker*.ipynb: example notebook to run  on AWS SageMaker...
+* SageMaker*.ipynb: notebook examples to run  on AWS SageMaker...
 
-* saved\_model: saved model outputs in .h5 format <br/>
+* saved\_model: (selected) saved model outputs in .h5 format <br/>
 
 
   
