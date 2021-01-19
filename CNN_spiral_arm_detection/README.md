@@ -21,11 +21,13 @@ datasets. Some astro domain knowledge is used here for feature selection.<br/>
 * cnn\_\*.ipynb:    vanilla convolutional networks using
   Tensorflow and Keras. This is a good exercise to understand how CNN
   works and how sensitive the result is with respect to
-  hyperparameters and input datasets. <br/>
+  hyperparameters and input datasets. For our current customised dataset,  this CNN performs better than
+  other transfer models. <br/>
 
 * othermodelnames\_\*.ipynb:  transfer\_learning\_models, based on  pre-trained models (ResNet, VGG19,
-Inception, EfficientNet, Yolo etc) to retrain the data. Interesting results will mostly come from using deep CNN like these. 
-I will add more content here soon ! <br/>
+Inception, EfficientNet, Yolo etc) to retrain the data. I have tried EfficientNet and VGG19 so far and the 
+results are not as good as expected. They are computationally expensive and will take a while
+to fine-tune the hyperparameters. More to explore. <br/>
   
 * SageMaker*.ipynb: notebook examples to run  on AWS SageMaker...
 
