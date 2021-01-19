@@ -31,7 +31,7 @@ to fine-tune the hyperparameters. More to explore. <br/>
   
 * SageMaker*.ipynb: notebook examples to run  on AWS SageMaker...
 
-* saved\_model: (selected) saved model outputs in .h5 format <br/>
+* saved\_model: (selected) saved model outputs in .h5 format. (large file removed) <br/>
 
 
   
