@@ -35,6 +35,7 @@ to fine-tune the hyperparameters. More to explore. <br/>
 
 * make_anime.py: script to make gif animations from random image files
 
+* files: gif files from make_anime.py
   
 
 Project rights and feedback to: Dr Tiantian Yuan<br/>
