@@ -33,6 +33,7 @@ to fine-tune the hyperparameters. More to explore. <br/>
 
 * saved\_model: (selected) saved model outputs in .h5 format. (large file removed) <br/>
 
+* make_anime.py: script to make gif animations from random image files
 
   
 
